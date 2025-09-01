@@ -15,7 +15,7 @@ def follow(thefile):
 @app.route('/', methods=['GET', 'POST'])
 def index():
     logFile = open("/home/minecraft/gamingnation/logs/latest.log")
-    loglines = follow(logfile)
+    loglines = follow(logFile)
     for line in loglines:
         mc_chat = lines
 
